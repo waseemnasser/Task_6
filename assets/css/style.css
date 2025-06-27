@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+}
+
+.myColor {
+    background-color: black !important;
+    height: 100px;
+    width: 100px !important;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.carousel-inner {
+    width: 100vw !important;
+    height: 100vh;
+
+    .card {
+        width: 90%;
+        height: 85vh;
+        background-color: rgb(5, 14, 47);
+        padding: 40px;
+        border: solid skyblue 30px;
+
+        .card-body .card-title {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .card-body .card-text {
+            color: white;
+            font-size: 24px;
+            padding-bottom: 30px;
+        }
+
+        .card-body .input {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .Output {
+            font-size: 28px;
+            margin-top: 60px !important;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        .card {
+            padding: 0;
+
+            .card-body .card-title {
+                font-size: 24px;
+                padding-bottom: 20px;
+            }
+
+            .card-body .card-text {
+                font-size: 18px;
+                padding-bottom: 20px;
+            }
+
+            .card-body .input {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .Output {
+                font-size: 19px;
+                margin-top: 40px !important;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container d-flex align-items-center justify-content-center">
+        <div id="carouselExample" class="carousel slide ">
+            <div class="carousel-inner d-flex align-items-center">
+                <div class="carousel-item active">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">1- Reverse a String</h5>
+                            <p class="card-text">
+                                function that takes a string as an argument and returns the string reversed
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"waseem"</code>
+                            </p>
+                            <button onclick="showReversedOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-1" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">2- Palindrome Check</h5>
+                            <p class="card-text">
+                                function that checks if a given string is a palindrome (reads the same forwards and
+                                backward). It should return true if it is a palindrome and false if it is not
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"toot"</code>
+                            </p>
+                            <button onclick="checkStringPalindromeOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-2" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">3- Find the Maximum Number in an Array</h5>
+                            <p class="card-text">
+                                function that takes an array of numbers and returns the largest number in it
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"[5, 6, 8, 1, 2]"</code>
+                            </p>
+                            <button onclick="returnMaxNumberOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-3" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">4- Factorial Calculation</h5>
+                            <p class="card-text">
+                                function that calculates the factorial of a given number
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"5"</code>
+                            </p>
+                            <button onclick="factorialOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-4" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">5- Prime Number Check</h5>
+                            <p class="card-text">
+                                function that takes an integer num and checks if it is a prime number
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"4"</code>
+                            </p>
+                            <button onclick="checkPrimeOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-5" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">6- Remove Duplicates from an Array</h5>
+                            <p class="card-text">
+                                function that takes an array and returns a new array containing only the unique elements
+                                (no duplicates)
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"[2, 2, 3, 3, 4, 4, 5, 5, 6]"</code>
+                            </p>
+                            <button onclick="removeDuplicatesOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-6" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">7- Find the Missing Number in a Sequence</h5>
+                            <p class="card-text">
+                                array any sequence numbers 1 between each number. Write a function to
+                                find the missing number
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"Sequence Array : [20 --> 100]"</code>
+                            </p>
+                            <button onclick="findMissingOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-7" class="mt-3 text-success fw-bold Output" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">8- Capitalize the First Letter of Each Word</h5>
+                            <p class="card-text">
+                                function that takes a sentence and returns a new sentence with the first letter of
+                                each
+                                word capitalized
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"hello waseem"</code>
+                            </p>
+                            <button onclick="capitalizeFirstOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-8" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">9- Anagram Check</h5>
+                            <p class="card-text">
+                                function to check if two strings are anagrams of each other (contain the same characters
+                                with the same frequency)
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong> <code>"listen" and "silent"</code>
+                            </p>
+                            <button onclick="anagramCheckOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-9" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">10- Chunk an Array</h5>
+                            <p class="card-text">
+                                function that takes an array and a size number, and splits the array into subarrays of
+                                the specified size
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] , size = 3"</code>
+                            </p>
+                            <button onclick="chunkArrayOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-10" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">11- Find a Pair of Numbers that Sum to a Target Value</h5>
+                            <p class="card-text">
+                                function that takes an array of numbers and a target number, and returns the first pair
+                                of numbers from the array that sum up to the target
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] , target = 9"</code>
+                            </p>
+                            <button onclick="getSumTargetOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-11" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">12- Rotate an Array to the Left</h5>
+                            <p class="card-text">
+                                function that takes an array and a number n, and rotates the array elements to the left
+                                by n positions
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 2, 3, 4, 5] , rotateIndex = 2"</code>
+                            </p>
+                            <button onclick="rotateArrayOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-12" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">13- Find the Intersection of Two Arrays</h5>
+                            <p class="card-text">
+                                function that takes two arrays and returns a new array containing only the elements that
+                                are common to both arrays (the intersection)
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 2, 3, 4, 4] and [3, 4, 5, 6, 4, 2]"</code>
+                            </p>
+                            <button onclick="intersectionArraysOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-13" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">14- Count Character Frequency in a String</h5>
+                            <p class="card-text">
+                                function that takes a string and returns an object representing a frequency map, where
+                                each key is a character and its value is the number of times it appears
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"Waseem"</code>
+                            </p>
+                            <button onclick="countCharOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-14" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">15- Flatten a Nested Array</h5>
+                            <p class="card-text">
+                                function that flattens a nested array (an array containing elements that may themselves
+                                be arrays) into a single, flat array
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, [2, 3], [4, [5, 6]]]"</code>
+                            </p>
+                            <button onclick="flattenArrayRecursiveOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-15" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">16- Find the Longest Word in a Sentence</h5>
+                            <p class="card-text">
+                                function that takes a sentence and returns the longest word in it. If there are multiple
+                                words with the same maximum length, return the first one that appears
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"The quick brown fox jumped over the lazy dog"</code>
+                            </p>
+                            <button onclick="longestWordOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-16" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">17- Find the Most Frequent Element in an Array</h5>
+                            <p class="card-text">
+                                function that takes an array of numbers or strings and returns the most frequently
+                                occurring element
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 2, 3, 2, 2, 4, 5, 2]"</code>
+                            </p>
+                            <button onclick="mostFrequentCharOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-17" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">18- Sort an Array of Objects by a Property</h5>
+                            <p class="card-text">
+                                array of objects, where each object represents a person with a name and age. Write a
+                                function to sort the array by age in ascending order (from youngest to oldest) without
+                                using Array.prototype.sort
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[{ name: "Alice", age: 30 }, { name: "Bob", age: 25 }, { name: "Charlie", age: 35 }]"</code>
+                            </p>
+                            <button onclick="bubbleSortOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-18" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">19- Find the First Non-Repeating Character</h5>
+                            <p class="card-text">
+                                function that takes a string and finds the first character that does not repeat.
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"swiss"</code>
+                            </p>
+                            <button onclick="uniqueCharOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-19" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card m-auto p-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">20- Symmetric Difference of Two Arrays</h5>
+                            <p class="card-text">
+                                function that takes two arrays and returns a new array containing the elements that are
+                                present in one of the arrays, but not in both
+                            </p>
+                            <p class="input">
+                                <strong>Example Input :</strong>
+                                <code>"[1, 1, 2, 3] and [3, 4, 5]"</code>
+                            </p>
+                            <button onclick="symmetricArrayOutput()" class="btn btn-primary mt-2">Output</button>
+                            <div id="output-20" class="mt-3 text-success fw-bold Output" style="display: none;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="myColor carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="myColor carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
