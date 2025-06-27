@@ -9,9 +9,9 @@
 }
 
 .myColor {
-    background-color: black !important;
-    height: 100px;
-    width: 100px !important;
+    background-color: grey !important;
+    height: 70px;
+    width: 70px !important;
     margin: auto;
     border-radius: 50%;
 }
@@ -49,6 +49,23 @@
         .Output {
             font-size: 28px;
             margin-top: 60px !important;
+        }
+
+        .Output_special {
+            font-size: 13px;
+            margin-top: 20px !important;
+        }
+
+        .input_special {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .card-text-special {
+            font-size: 13px;
+            padding-bottom: 20px;
+            color: white;
         }
     }
 
